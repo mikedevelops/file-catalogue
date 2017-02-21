@@ -1,0 +1,20 @@
+{
+  "name": "file-catalogue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.10.0",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
