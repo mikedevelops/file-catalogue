@@ -1,11 +1,15 @@
-function FileCatalogue (options) {}
+function FileCatalogue (options, webpack) {
+  this.test = options.test
+}
 
 FileCatalogue.prototype.apply = function (compiler) {
+    const test = this.test
+
     compiler.plugin('emit', function (compilation, callback) {
         const assets = { assets: [] }
 
         for (filename in compilation.assets) {
-            if (filename.match(/.jpg/) || filename.match(/.png/)) {
+            if (filename.match(test)) {
                 assets.assets.push(filename)
             }
         }

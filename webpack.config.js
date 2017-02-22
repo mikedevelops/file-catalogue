@@ -18,6 +18,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin(),
-        new FileCatalogue()
+        new FileCatalogue({
+          test: /.(jpg|png)$/
+        })
     ]
 }
