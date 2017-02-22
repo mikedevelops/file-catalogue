@@ -11,12 +11,8 @@ FileCatalogue.prototype.apply = function (compiler) {
         const assets = { assets: [] }
 
         for (filename in compilation.assets) {
-            if (test && filename.match(test)) {
-                assets.assets.push(filename)
-            }
-            else {
-              assets.assets.push(filename)
-            }
+            if (!test) assets.assets.push(filename)
+            else if (filename.match(test)) assets.assets.push(filename)
         }
 
         compilation.assets[`${name}.json`] = {
