@@ -1,6 +1,6 @@
 function FileCatalogue (options, webpack) {
-  this.test = options.test
-  this.filename = options.filename || 'assets'
+  this.test = options && options.test
+  this.filename = options && options.filename || 'assets'
 }
 
 FileCatalogue.prototype.apply = function (compiler) {

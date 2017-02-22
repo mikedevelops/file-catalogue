@@ -18,8 +18,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin(),
-        new FileCatalogue({
-          filename: 'bar/foo'
-        })
+        new FileCatalogue()
     ]
 }
