@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new FileCatalogue({
       filename: 'assets',
-      test: /.(jpg|png)$/
+      test: /\.(jpg|png)$/
     })
   ]
 }
