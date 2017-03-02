@@ -17,7 +17,7 @@ _assets/_
 
 _webpack.config.js_
  ```javascript
-const FileCatalogue  = require('file-catalogue/FileCatalogue')
+const FileCatalogue  = require('file-catalogue')
 
 module.exports = {
   // ... your config
